@@ -7,17 +7,7 @@ function App() {
     <div className="app">
       <header>
         <h1>React color pick</h1>
-        <FormColor
-          onChange={() =>""}
-          label="Primary color" 
-          id="Primary" 
-          value="#ffce00"
-        />
-        <FormColor 
-          onChange={() =>""}
-          label="Secondary color" 
-          id="Secondary"
-        />
+        <FormColor />
       </header>
     </div>
   )

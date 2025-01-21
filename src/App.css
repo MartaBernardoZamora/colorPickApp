@@ -17,7 +17,11 @@ h1{
   text-align: center;
   margin: 5rem 0;
 }
-
+.colorSquare{
+  width: 100px;
+  height: 100px;
+  background-color: #831B1B;
+}
 /*Clases auxiliares*/
 
 /*React color picker*/

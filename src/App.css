@@ -1,17 +1,12 @@
-body{
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.app{
-  display:flex;
-  flex-direction: column;
+.app{    
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 h1{
   text-align: center;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 .colorSquare{
   width: 200px;

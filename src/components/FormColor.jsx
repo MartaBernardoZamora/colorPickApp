@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function FormColor(onChange, label, id, value = "#292929") {
-    
+function FormColor() {
+    const [currentColor, setCurrentColor]=useState("#48fea9");
+    function handleColorChange(e){
+        setCurrentColor(e.target.value);
+    }
     return (
-        <div className="form-color">
-            <label htmlFor={id}>{label}</label>
-            <div className="form-input-wrapper">
-                <div 
-                    className="form-input-fill"
-                    data-color={value}
-                    style={{ color: value }}>
-                </div>
-                <input 
-                    onChange={onChange}
-                    defaultValue={value}
-                    name={id} 
-                    id={id}
+        <main>            
+            <div
+                className="colorSquare"
+                style={{backgroundColor: currentColor}}
+            >                
+                <p>Color seleccionado: {currentColor}</p>
+            </div>
+            <div className="form-color">
+                <h2>Selecciona un color</h2>
+                <input
+                    onChange={handleColorChange} 
                     type="color" 
+                    className="colorInput" 
+                    value={currentColor}
                 />
             </div>
-        </div>
+        </main>
     )
 }
 

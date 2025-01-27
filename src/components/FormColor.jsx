@@ -6,7 +6,7 @@ function FormColor() {
         setCurrentColor(e.target.value);
     }
     return (
-        <>            
+        <main>            
             <div
                 className="colorSquare"
                 style={{backgroundColor: currentColor}}
@@ -18,12 +18,11 @@ function FormColor() {
                 <input
                     onChange={handleColorChange} 
                     type="color" 
-                    name="primary" 
-                    id="primary" 
+                    className="colorInput" 
                     value={currentColor}
                 />
             </div>
-        </>
+        </main>
     )
 }
 

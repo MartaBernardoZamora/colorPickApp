@@ -1,25 +1,37 @@
-body{
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.app{
-  display:flex;
-  flex-direction: column;
+.app{    
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-family: system-ui;
 }
 h1{
   text-align: center;
-  margin: 5rem 0;
+  margin: 2rem 0;
+}
+main{
+  text-align: center;
 }
 .colorSquare{
+  display: flex;
+  align-items: center;
   width: 200px;
   height: 200px;
   background-color: #48fea9;
-  border: 0.2rem solid grey
+  border-radius: 2vh;
+  border: 0.2rem solid #bfbaba;
 }
-/*Clases auxiliares*/
+p{
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #6b6a6a;
+}
+h2{
+  font-size: 1rem;
+}
+.colorInput{
+  border-color: #bfbaba;
+  border-radius: 2px;
+}
 
-/*React color picker*/
 

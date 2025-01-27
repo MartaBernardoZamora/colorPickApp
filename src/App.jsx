@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import FormColor from './components/FormColor'
+import Header from './components/header'
 
 function App() {
   return (
     <div className="app">
-      <header>
-        <h1>React color pick</h1>
-        <FormColor />
-      </header>
+      <Header />
+      <FormColor />
     </div>
   )
 }
